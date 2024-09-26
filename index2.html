@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Plan</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="aihome/sty.css">
+
+    <!-- font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="desc">
+            <button><a href="index.html" aria-current="page" class="home" > Back Home</a></button>
+            
+            <h1 class="text"> AI Trading Plan</h1>
+            <p> <b>Real-time processing:</b> AI-powered trading systems can analyze vast amounts of market data, news, and other variables at speeds that far surpass human capabilities.
+              
+            <br> <b>Advanced analytics</b>: AI models, especially machine learning algorithms, can identify complex patterns and trends in market data that may not be obvious to human traders
+        
+        </p>
+        <h3 style="color: rgb(190, 188, 188);">Click on 'START CHAT' for Trading Details And Plan Pdf  </h3>
+
+            <button id="init">START CHAT</button>
+        </div>
+   
+        <div class="kkr">
+            <img src="aihome/bot.png" alt="" class="bot-img">
+        </div>
+    </div>
+    <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="aihome/bot.png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">Trading Plan</span>
+                        <br>
+                        <span style="color:rgb(11, 179, 33)">online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                </div>
+            </div>
+
+            <div id="chat-box">
+
+            </div>
+            <div class="footer">
+                <span>Powered by @FxBot</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js file  -->
+    <script src="app.js"></script>
+</body>
+</html>

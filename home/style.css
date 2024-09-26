@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@300&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border-radius: 50% ;
+    border: 1px solid rgb(0, 89, 255);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+    
+}
+.nav-list{
+    
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+    
+    
+
+}
+
+.nav-list li{
+
+    list-style: none;
+    padding: 20px 30px;
+    align-items: center;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    
+    
+
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey
+
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background {
+    background:rgb(196, 196, 216) url('bgimg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+
+   
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.firsthalf {
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+}
+
+.secondhalf {
+    width: 80%;
+    
+
+}
+.secondhalf img{
+    width: 85%;
+    
+    border-radius: 10%;
+    display: block;
+    margin-top: 13%;
+    box-shadow: 0 4px 8px rgb(13, 13, 14);
+
+}
+
+
+
+.text-big2 {
+    font-size: 41px;
+    text-align: left;
+  
+}
+
+.text-small2{
+    font-size: 35px;
+    color: rgb(48, 46, 45);
+    text-align: left;
+   
+}
+.text-big {
+    font-size: 41px;
+    text-align: left;
+  
+}
+
+.text-small{
+    font-size: 20px;
+    color: rgb(59, 59, 58);
+    text-align: left;
+   
+}
+.btn {
+    padding: 5px 10px;
+    margin: 10px 5px;
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 7px;
+    background: rgb(173, 171, 171);
+    color: rgb(44, 44, 49);
+    cursor: pointer;
+    box-shadow: 0 4px 4px black;
+    
+
+}
+.btn:hover{
+    
+    background:rgb(212, 206, 206) ;
+    
+    
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+
+}
+.buttons{
+    font-size: 20px;
+    
+}
+.section {
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width: 80%;
+    margin:auto;
+    font-family: "Ubuntu", sans-serif;
+    padding: 5px;
+    
+
+}
+
+
+
+.paras {
+    padding: 0px 65px;
+    text-align: left;
+}
+
+.section-left {
+   
+    flex-direction: row-reverse;
+
+
+}
+.sectionsubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+
+
+.thumbnail img{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 80px;
+    box-shadow: 0 4px 4px black;
+    
+  
+
+}
+
+.text-footer{
+    display: flex;
+    align-items: center;
+
+   justify-content: center;
+    padding: 20px 0;
+    color: white;
+}
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+
+.line{
+    width: 33px;
+    background-color: rgb(245, 242, 242);
+    height: 4px;
+    margin: 3px 3px;
+}
+
+.logo2{
+    position: absolute;
+    left: 5%;
+    top: 15px;
+    display: none;
+    width: 33px;
+}
+.logo3{
+    color: rgb(228, 222, 222);
+    height: 4px;
+    margin: 3px 3px;
+    width: 33px;
+}
+.logo3 h1{
+    color: white;
+
+}
+
+
+/* animated text like writing */
+.text-container3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(60, 61, 61);
+    font-size: 16px;
+    overflow: hidden; 
+    border-right: .15em solid rgb(243, 9, 28); /* Typing cursor */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin: 0 auto; /* Center aligns the container */
+    animation: typing 3s steps(40) infinite alternate; /* Animation effect */
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+
+
+  .logo3{
+    color: rgb(207, 204, 204);
+    height: 4px;
+    margin: 3px 3px;
+    width: 33px;
+}
+
+.form3{
+    background-color: #8f8f8f;
+    height: 100px;
+    display: flex;
+   
+    justify-content: center;
+    text-align: end;
+    font-size: 20px;
+    
+ }
+
+  h2{
+    
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 25px;
+    margin-right: 10px;
+
+ }
+
+ .btn5 {
+    width: 30%;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration:none; 
+    box-shadow: 0 4px 4px black;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.btn5:hover{
+    background-color: #5a5757;
+
+}
+
+/* footer for social and more */
+.text-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer2{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 20px 0;
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* social media icone on the botton */
+.socialmedia2 {
+    margin-top: 80px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+.btn56{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    background: #575454;
+    margin: 10px;
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: 0 5px 15px -5px black;
+    overflow: hidden;
+
+ 
+
+
+}
+.btn56 i{
+    line-height: 50px;
+    font-size: 25px;
+    transition: 0.2s linear;
+    
+}
+
+.btn56:hover i {
+    transform: scale(1.7);
+    color: rgb(15, 14, 15);
+    
+}
+
+.socialmedia2 p{
+    color: rgb(180, 174, 174);
+}
+
+
+/* for fx plan and website plan */
+
+.mapsalgo{
+    display: flex;
+   
+}
+
+
+.aboutplank{
+    display: flex;
+    justify-content: space-evenly;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.webste {
+    width: 355px;
+    height: 530px;
+    border: 0px solid black;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0px  2px 6px black;
+    transition: 1s;
+    display: flex;
+    
+    
+}
+url{
+    height: 10px;
+    width: 10px;
+}
+
+
+
+
+/* table button for */
+table{
+    border-style: none;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 2px 4px blue;
+    background-color: #333232;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+table:hover{
+    box-shadow: 0 4px 10px blue; 
+    margin-top: 8px;
+    background-color: #504f4f;
+}
+
+table a{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+/* live chart for border */
+.livechart2 {
+    border: 0px solid black;
+    box-shadow: 0 4px 8px black;
+    width: 400px;
+    height: 530px;
+    margin-top: 10px;
+    margin-right: 6px;
+
+}
+.webste2 {
+    padding: 0 2px 0 2px;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+
+.webste2 {
+    margin-top: 8px;
+    color: #424141;
+}
+
+.webste2 h3{
+    color: #1f1f1f;
+}
+
+.webste2 p{
+    color: #615f5f;
+}
+
+.proj2 a{
+    color: #201df7;
+    
+}
+
+/* .bt4{
+    background-color: #1f1f1f;
+    border-radius: 4px;
+    width: 100%;
+    height: 28px;
+    
+    box-shadow: 0 4px 8px rgb(62, 151, 253);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.bt4 a{
+    font-size: 15px;
+    
+
+} */
+
+
+
+/* .webste img{
+    width: 100%;
+    height: 50px;
+
+} */
+
+.webste:hover{
+    box-shadow: 0 8px 16px rgb(52, 51, 53) ;
+}
+
+
+/* about this writing code  */
+
+.makretba{
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.makretba .text-container3{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* section of the system of game */
+
+.skewed{
+    width: 45em;
+    color: #f1f1f1;
+    display: flex;
+    background: #111 ;
+    margin: 2em 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+.text {
+    padding: 1.5em;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+a{
+    color: #fff;
+    text-decoration: 
+    none ;
+}
+
+.image7{
+    width: 35%;
+    height: 17em;
+    
+    overflow: hidden;
+    
+    
+}
+
+.image::before{
+ 
+    
+    position: absolute;
+    left: -6.1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    background: #111;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.skewed-left .image::before{
+    transform:
+    translateY(-50%) rotate(-20deg) ;
+    left: initial;
+    right: -6.1em;
+}
+
+img{
+    
+    width: 140%;
+}
+
+
+.form2{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #1f1f1f;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .imgFluid img{
+    height: 20px;
+    width: 20px;
+
+ }
+
+
+ 
+
+
+.webste2 i{
+    color: rgb(0, 60, 255);
+    
+}
+
+ .star2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .star2 i{
+    color: rgb(20, 122, 255);
+    font-size: 25px;
+ }
+
+@media (max-width: 1084px){
+    .aboutplank{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .livechart2{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 780px){
+    .mapsalgo{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 1140px ){
+    .nav-list{
+     flex-direction: column;
+     margin-top: 30px;
+     gap: 0.5px;
+     
+    }
+    .navbar{
+       flex-direction: column;
+       transition: all 0.10s ease-out;
+       height: 350px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+
+    }
+    .hnav-resp{
+        height: 65px;
+    }
+    .v-class-resp{
+        opacity: 0;
+        display: none;
+    }
+    .logo2{
+        display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .logo{
+        display: none;
+    }
+    .box-main{
+        
+        max-width: 100%;
+        
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+        
+    }
+    .text-small{
+        text-align: center;
+        
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px 0px;
+        
+    }
+    .firsthalf{
+        display: flex;
+        align-items: start;
+        justify-content: right;
+        text-align: center;
+        margin-left: 20% ;
+    }
+    .secondhalf{
+        width: 40%;
+        margin: auto;
+    }
+    .rightnav{
+        display: none;
+    }
+}
+
+
+/* sekwed image system k liye */
+
+@media screen and (max-width: 750px) {
+    .skewed{
+        display: block;
+        width: 20em;
+
+    }
+    .image7{
+        width: 100%;
+        height: 350px;
+    }
+
+    .text{
+        width: 90%;
+    }
+    img {
+        width:160%;
+    }
+    .skewed .image::before{
+        width: 120%;
+        height: 40%;
+        top: -5em;
+        left: 50%;
+        transform: translate(-50%) rotate(10deg);
+
+    }
+    .skewed-left .image::before{
+        transform: translate(-50%) rotate(-10deg);
+        top: initial;
+        bottom: -5em;
+    }
+}
+
+
+
+@media (max-width: 700px ){
+
+    .secondhalf{
+        width: 40%;
+        margin: auto;
+    }
+    .firsthalf{
+        display: flex;
+        align-items: start;
+        justify-content: right;
+        text-align: center;
+        margin-left: 10% ;
+    }
+    h2{
+        display: none;
+    }
+    .btn5{
+        width: 50%;
+        height: 50px;
+    }
+
+   
+
+   
+
+    
+}
+
+
+@media (max-width: 991px ){
+    
+}
+
+@media (max-width: 513px ){
+    .secondhalf{
+        width: 48%;
+        margin: auto;
+    }
+    .firsthalf{
+        display: flex;
+        align-items: start;
+        justify-content: right;
+        text-align: right;
+        margin-top: 20%;
+        margin-right:25%;
+        
+    }
+    .box-main{
+        
+        max-width: 100%;
+        flex-direction: column;
+        
+    }
+
+
+      .firstsection{
+        height: 100vh;
+    } 
+    .text-container3{
+        margin-top: 110px;
+    }
+
+
+   
+        /* for btn social media */
+        /* .btn56{
+            width: 30px;
+            height: 30px;
+        }
+        .btn56 i{
+            line-height: 32px;
+            font-size: 15px;  
+            
+        }
+
+        .text-footer{
+            font-size: 13px;
+        }
+        .text-footer2{
+            font-size: 14px;
+        }
+        
+        .socialmedia2{
+            font-size: 14px;
+        }
+
+     */
+    
+    
+
+    }
+
+    @media (max-width: 420px ){
+        .firstsection{
+            height: 85vh;
+        }
+        /* .webste {
+            width: 100%;
+            height: 300px;
+            border: 0px solid black;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 4px 8px black;
+            transition: 1s;
+           
+        
+        } */
+
+          .btn5 a{
+            font-size: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+
+
+
+    }
