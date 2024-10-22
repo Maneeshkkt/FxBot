@@ -6,10 +6,10 @@ var data= {
 
     fxplan: {
         title:["These are Our Ai Trading Plan Details"],
-        options: ["PlanPdf","Plan","video"],
+        options: ["PlanPdf","Ai Pdf","video"],
         url : {
             
-            link:["https://the2business.online/","https://the2business.online/index2.html","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos"]
+            link:["fxbotplan.html","aipdf.html","video.html" ]
         }
     },
    
@@ -131,7 +131,7 @@ function handleOptions(options,url){
         cbot.appendChild(opt);
     }
     var opt= document.createElement("span");
-    var inp= '<a class="m-link" href="'+url.more+'">'+'Admin Contact</a>';
+    var inp= '<a class="m-link" href="conact.html ">'+'Admin Contact</a>';
 
     const isObjectEmpty= (url)=>{
         return JSON.stringify(url)=== "{}";
